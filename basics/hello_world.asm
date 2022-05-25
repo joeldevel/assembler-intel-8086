@@ -4,11 +4,12 @@ global main
 extern puts
 
 section .data
-	greeting db "Hello world!",0 ; resb = reserve byte.
+	greeting db "Hello world!", 0 ; db = define byte.
 
 section .text
 
 main:
 	mov rdi, greeting	; first parameter goes to rdi
-	call puts			; call function
-	ret					; end of program
+	call puts		; call function
+	ret			; end of program
+	
